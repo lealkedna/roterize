@@ -6,10 +6,18 @@ import Login from '@/components/Login';
 
 export default function HomeScreen() {
   return (
-    <View>
+    <View style={styles.container}>
       <Login></Login>
     </View>
   );
 }
-
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    backgroundColor: '#50D890',
+    padding: 20,
+  },
+});
 

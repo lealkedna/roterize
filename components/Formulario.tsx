@@ -86,11 +86,11 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     paddingHorizontal: 10,
     borderRadius: 5,
-    width: 700, 
+    width: '80%', 
     padding: 25,
   },
   button: {
-    width: 700,
+    width:'80%',
     height: 50,
     backgroundColor: '#272727',
     borderRadius: 8,

@@ -9,36 +9,44 @@ interface LoginProps {
 export default function Login() {
   return (
     <View style={styles.container}>
-      <Image
-        style={styles.logo}
-        source={require('../assets/images/viagem-removebg-preview.png')}
-      />
-      <Text style={styles.texto}>Descreva sua viagem de forma única e organizada, compartilhando detalhes como destinos, pontos turísticos</Text>
-      {/* <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate('Formulario')}
-      >
-        <Text style={styles.buttonText}>Entrar</Text>
-      </TouchableOpacity> */}
+    <Image style={styles.logo} source={require('../assets/images/oculos-removebg-preview.png')} />
+    <View style={styles.textContainer}>
+      <Text style={styles.paragraph}>
+        Descreva sua viagem de forma única e organizada, compartilhando detalhes como destinos, pontos turísticos
+      </Text>
+    </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
-    justifyContent: 'center',
+    flex: 1,
+    justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#50D890',
+    padding: 20,
   },
-  logo: {
-    width: 150,
-    height: 150,
-    marginBottom: 50,
+  logo:{
+    width: 120,              
+    height: 120,            
+    marginTop: 100,  
+    resizeMode: 'contain',
   },
-  texto: {
-    fontSize: 15,
+   textContainer: {
+    flex: 1,  
+     marginTop: 100,                         
+    alignItems: 'center',   
   },
+
+  paragraph: {
+    fontSize: 24,    
+    fontWeight: 'bold',      
+    textAlign: 'center',      
+    color: '#263A29',        
+    fontFamily: 'sans-serif',
+  },
+});
   // button: {
   //   width: '70%',
   //   height: 50,
@@ -52,4 +60,3 @@ const styles = StyleSheet.create({
   //   fontSize: 18,
   //   fontWeight: 'bold',
   // },
-});
