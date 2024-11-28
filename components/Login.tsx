@@ -12,7 +12,7 @@ export default function Login() {
     <Image style={styles.logo} source={require('../assets/images/oculos-removebg-preview.png')} />
     <View style={styles.textContainer}>
       <Text style={styles.paragraph}>
-        Descreva sua viagem de forma única e organizada, compartilhando detalhes como destinos, pontos turísticos
+        Descreva sua viagem de forma única e organizada, compartilhando detalhes como destino e pontos turísticos.
       </Text>
     </View>
     </View>
@@ -24,12 +24,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: '#50D890',
+    backgroundColor: '#fffff',
     padding: 20,
   },
-  logo:{
-    width: 120,              
-    height: 120,            
+  logo:{          
     marginTop: 100,  
     resizeMode: 'contain',
   },
